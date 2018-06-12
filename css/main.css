@@ -1,0 +1,248 @@
+/*Basic styles*/
+html,body {
+    font-family: 'Open Sans', sans-serif;
+    color: #3c3c3c;
+}
+div,
+img,
+a,
+section,
+aside,
+header,
+main {
+    display: block;
+}
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+a,
+a:active,
+a:hover,
+a:focus,
+.btn,
+.btn:hover,
+.btn:focus,
+.btn:active {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+p {
+    line-height: 1.8;
+}
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.text-uppercase {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/*Main content styles*/
+.introduce-banner {
+    text-align: center;
+    position: relative;
+    background: #ffc702;
+}
+.introduce-banner:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -20px;
+    left: 49.4vw;
+    width: 0;
+    height: 0;
+    border-color: #ffc702 transparent transparent transparent;
+    border-style: solid;
+    border-width: 10px;
+}
+.introduce-banner h1 {
+    margin: 0;
+    padding: 40px 0;
+    color: #ffffff;
+    letter-spacing: 4px;
+}
+.btn-call,
+.btn-mail {
+    color: #ffffff;
+    background: #3c3c3c;
+    padding: 10px 15px 10px;
+    margin: 50px 0 50px;
+    width: 100%;
+    max-width: 230px;
+    font-size: 18px;
+    transition: all 0.3s ease 0s;
+}
+.btn-call:hover,
+.btn-mail:hover {
+    color: #ffc702;
+}
+.btn-call {
+    float: right;
+}
+.btn-mail {
+    background: #9d9d9d;
+}
+.contact-info_cover {
+    display: block;
+    margin: 0 auto 100px;
+    width: 100%;
+    max-width: 700px;
+    background: #ebebeb;
+    padding: 20px 0;
+    text-align: center;
+}
+.contact-item {
+    display: inline-block;
+    margin: 0 60px 0 60px;
+}
+.contact-item p {
+    display: inline-block;
+}
+.contact-time {
+    margin-left: 40px;
+}
+.service-text_cover p {
+    padding: 0 0 60px;
+}
+.head-text_position {
+    margin: 0 0 30px;
+}
+.service-list_cover {
+    background: #ebebeb;
+}
+.service-text {
+    text-align: center;
+    color: #ffffff;
+    background: #ffc702;
+    position: relative;
+    padding: 15px 0;
+}
+.service-text:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-color: #ffc702 transparent transparent transparent;
+    border-style: solid;
+    border-width: 10px;
+}
+.profile-head_text {
+    background: #0073d8;
+}
+.profile-head_text:after {
+    border-color: #0073d8 transparent transparent transparent;
+}
+.service-list {
+    padding: 40px 50px;
+    margin: 0;
+}
+.service-list_item {
+    padding: 5px 0;
+}
+.main-services {
+    margin-bottom: 100px;
+}
+.connection-info {
+    margin: 100px 0 40px;
+}
+/*Footer styles*/
+.global-links {
+    background: #9d9d9d;
+}
+.footer-head_text {
+    color: #ffffff;
+    font-size: 22px;
+    margin: 50px 0 70px;
+}
+.author-contact_cover {
+    color: #ffffff;
+}
+.author-contact_cover a {
+    color: #ffffff;
+    transition: all 0.3s ease 0s;
+}
+.author-contact_cover a:hover {
+    color: #ffc702;
+    text-decoration: none;
+}
+.social-icon_cover a {
+    display: inline-block;
+    color: #3c3c3c;
+    transition: all 0.3s ease 0s;
+}
+.social-icon_cover a:hover {
+    color: #ffc702;
+}
+.fab {
+    font-size: 40px;
+}
+
+/*Media queries*/
+@media screen and (max-width: 1200px) {
+    .footer-head_text {
+        margin: 45px 0 40px;
+    }
+    .author-contact_cover {
+        padding-bottom: 10px;
+    }
+}
+@media screen and (max-width: 993px) {
+    .author-img_cover img {
+        max-width: 155px;
+    }
+    .service-list_cover {
+        margin-bottom: 20px;
+    }
+    .social-icon_cover {
+        padding-bottom: 20px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .introduce-banner h1 {
+        font-size: 18px;
+        padding: 20px 0;
+    }
+    .btn-call, .btn-mail {
+        float: none;
+        display: block;
+        margin: 30px auto 20px;
+    }
+    .btn-mail {
+        margin-top: 0;
+    }
+    .contact-info_cover {
+        margin: 20px auto 40px;
+    }
+    .head-text_position {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    .service-text_cover p {
+        padding-bottom: 30px;
+    }
+    .service-text {
+        font-size: 16px;
+    }
+    .main-services {
+        margin-bottom: 30px;
+    }
+    .connection-info {
+        margin-top: 50px;
+    }
+    .social-info_cover {
+        padding-left: 15px;
+    }
+}
+
